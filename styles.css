@@ -26,7 +26,7 @@ body {
 }
 
   
-.header {
+.header:not(.sticky) {
     position: fixed;
 
     top: 0;
@@ -43,18 +43,17 @@ body {
     
 
     /* background-color: red; */
-
-
-    transition: 0.3s;
-}
-.header .sticky {
-    background: red;
-   /* background-image: linear-gradient(rgba(52, 79, 124, 0.25),rgba(52,79,124,0.25)),url(./Pictures/Website-design/background.jpg);
+    background-image: linear-gradient(rgba(52, 79, 124, 0.25),rgba(52,79,124,0.25)),url(./Pictures/Website-design/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; */
+    background-position: center;
+
+    transition: 0.3s;
 }
+/* .header.sticky {
+    background: red;
+} */ /* js not working */
 
 .logo img {
     /* scale: 0.75; */ /* makes bounding box incorrect and not correctly resizeable */
@@ -96,6 +95,7 @@ body {
 }
 
 body {
+    min-height: 1000px;
    /* background as image */
     background-image: linear-gradient(rgba(52, 79, 124, 0.25),rgba(52,79,124,0.25)),url(./Pictures/Website-design/background.jpg);
     background-size: cover;
