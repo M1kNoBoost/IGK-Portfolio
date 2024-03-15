@@ -26,30 +26,42 @@ body {
 }
 
   
-header {
+.header {
     position: fixed;
 
     top: 0;
     right: 0;
-    width: 100%; /* test max-width */
+    left: 0;
+    max-width: 100%; /* test max-width */
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
     padding: 2rem 9%;
+    border: 1px solid red;
+    
 
     /* background-color: red; */
-    background-image: linear-gradient(rgba(52, 79, 124, 0.25),rgba(52,79,124,0.25)),url(./Pictures/Website-design/background.jpg);
+
+
+    transition: 0.3s;
+}
+.header .sticky {
+    background: red;
+   /* background-image: linear-gradient(rgba(52, 79, 124, 0.25),rgba(52,79,124,0.25)),url(./Pictures/Website-design/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center; */
 }
 
 .logo img {
-    scale: 0.75;
+    /* scale: 0.75; */ /* makes bounding box incorrect and not correctly resizeable */
     transition: transform 0.4s ease-in-out;
+    border: 1px solid red;
+    width: 300px;
+    height: auto; 
 }
 .logo img:hover {
     transform: scale(1.1) translateX(12px);
