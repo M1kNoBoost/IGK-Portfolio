@@ -29,57 +29,279 @@
 
     <body>
 
+        <!-- Header / Navbar -->
         <header>
+
             <a href="home.html" class="logo">
                 <img src="Pictures/Website-design/Logo.png" alt="logo">
             </a>
 
-            <div class="menu-icon" id="menu-icon"><i class='bx bx-menu' ></i></div>
+            <div class="menu-icon" id="menu-icon"><i class='bx bx-menu'></i></div>
 
-                <ul class="navbar">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <ul class="navbar">
+                <li><a href="#about">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
         </header>
+        
+        <!-- Home section -->
+        <section class="home" id="home">
 
-        <section class="about">
+            <div class="home-content">
 
-            <div class="about-text">
-                <h1>Hi, I'm Mikk Salom</h1>
-                <h2>Graphic Designer & 3D Artist</h2>
-            </div>
-            
-            <div class="portrait">
-                <img src="./Pictures/Website-design/Portrait.png" alt="portrait">
-            </div>
+                <h1>Hi, I'm <span>Mikk Salom</span></h1>
+                <div class="subtitle-animation">
+                    <h3>Graphic Designer & 3D Artist</h3>
+                </div>
+                
+                <!-- <div class="portrait">
+                    <img src="./Pictures/Website-design/Portrait.png" alt="portrait">
+                </div> -->
 
-        </section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vitae fugiat cum excepturi eligendi ipsa assumenda natus. Illum nam vero dolor aspernatur animi adipisci optio? <a href="#" class="btn">Continue Reading...</a></p>
 
-        <section class="contact">
 
-            <div>
-                <h1>Let's Get in Touch</h1>
-                <a href="#" class="hire-me-btn">Hire Me via Email</a>
-                <h3>Follow my Activity on Social Media</h3>
+                <h1 id="title2">Let's Get in Touch</h1>
+
+                <div class="btn-box">
+                    <a href="#" class="btn">Hire Me via Email</a>
+                </div>
+
+                <!-- <h3 class="follow">Follow my Activity on Social Media</h3> -->
 
                 <ul class="social-media-icons">
-                    <li><a href="#" class="youtube-icon"><i class='bx bxl-youtube' ></i></a></li>
-                    <li><a href="#" class="instagram-icon"><i class='bx bxl-instagram-alt' ></i></a></li>
-                    <li><a href="#" class="linkedin-icon"><i class='bx bxl-linkedin-square' ></i></a></li>
+                    <li><a href="#" class="yt-icon"><i class='bx bxl-youtube' ></i></a></li>
+                    <li><a href="#" class="inst-icon"><i class='bx bxl-instagram' ></i></a></li>
+                    <li><a href="#" class="in-icon"><i class='bx bxl-linkedin' ></i></a></li>
                 </ul>
 
+                <div class="portrait"></div>
+
+            </div>
+
+        </section>
+
+        <!-- About section-->
+        <section class="about" id="about">
+
+            <h1 class="heading">About <span>Me</span></h1>
+
+            <div class="about-row">
+                <div class="about-img">
+                    <img src="./Pictures/Website-design/profile-picture.png" alt="profile-picture">
+                    <span class="circle-spin"></span>
+                </div>
+            </div>
+
+        </section>
+        
+        <!-- Education section -->
+        <section class="education" id="education"> <!-- change to about -->
+
+            <h1 class="heading">About <span>Me</span></h1>
+            
+            <div class="education-row">
+                <div class="education-column">
+                    <h3 class="title">Education</h3>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bx-calendar' ></i> 2023 - 2026</div>
+                                <h2>Designer - Pärnu Saksa Tehnoloogiakool</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae ut adipisci in aperiam assumenda molestiae, dicta qui id. Pariatur, cumque.</p> 
+                            </div> 
+                        </div>   
+                    </div>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bx-calendar' ></i> 2023 - 2026</div>
+                                <h2>Designer - Pärnu Saksa Tehnoloogiakool</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nisi perspiciatis. Quaerat repellendus sunt corporis consequuntur mollitia doloribus aperiam tempore?</p> 
+                            </div> 
+                        </div>   
+                    </div>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bx-calendar' ></i> 2023 - 2026</div>
+                                <h2>Designer - Pärnu Saksa Tehnoloogiakool</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nisi perspiciatis. Quaerat repellendus sunt corporis consequuntur mollitia doloribus aperiam tempore?</p> 
+                            </div> 
+                        </div>   
+                    </div>
+                </div>
+
+                <div class="education-column">
+                    <h3 class="title">Experience</h3>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bx-calendar' ></i> 2023 - 2026</div>
+                                <h2>Designer - Company</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae ut adipisci in aperiam assumenda molestiae, dicta qui id. Pariatur, cumque.</p> 
+                            </div> 
+                        </div>   
+                    </div>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bx-calendar' ></i> 2023 - 2026</div>
+                                <h2>Designer - Company</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nisi perspiciatis. Quaerat repellendus sunt corporis consequuntur mollitia doloribus aperiam tempore?</p> 
+                            </div> 
+                        </div>   
+                    </div>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bx-calendar' ></i> 2023 - 2026</div>
+                                <h2>Designer - Company</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nisi perspiciatis. Quaerat repellendus sunt corporis consequuntur mollitia doloribus aperiam tempore?</p> 
+                            </div> 
+                        </div>   
+                    </div>
+                </div>
+                
             </div>
             
-        </section>
 
-        <section class="portfolio">
+            <div class="about-content">
+                <h2>Graphic Designer & 3D Artist</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas fugit ut repellat consectetur aliquam maxime sit minima reiciendis odit quas delectus quae, itaque, laboriosam cumque quibusdam quaerat sed hic autem vero consequuntur? Corrupti ex modi saepe odio dolor facilis est neque non, necessitatibus, cum error possimus, repellat veritatis accusantium numquam.</p>
+            </div>
 
-            <div class="portfolio-text">
-                <h2></h2>
+            <div class="btn-box">
+                <a href="#" class="btn">Continue Reading...</a>
             </div>
 
         </section>
+
+        <!-- skills section -->
+        <section class="skills" id="skills">
+            <h1 class="heading">My <span>Skills</span></h1>
+
+            <div class="skills-row">
+                <div class="skills-column">
+                    <h3 class="title">Design Skills</h3>
+
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>Adobe Illustrator <span>70%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>Adobe Photoshop <span>55%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>Adobe After Effects <span>35%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>Blender <span>80%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <h3 class="title">Professional Skills</h3>
+
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>dhasuidha <span>70%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>dajsiduahsdu <span>55%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>dashdoqwjd <span>35%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>rhdfoseifhasoihcweo <span>80%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio-->
+        <section class="portfolio">
+
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <h1 class="heading">Contact <span>Me!</span></h1>
+            
+            <form action="#">
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" placeholder="Full Name" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Email Address" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <div class="input-field">
+                        <input type="text" placeholder="Phone Number" required>
+                        <span class="focus"></span>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Email Subject" required>
+                        <span class="focus"></span>
+                    </div>
+                </div>
+
+                <div class="textarea-field">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message / Inquiry"></textarea>
+                    <span class="focus"></span>
+                </div>
+
+                <div class="btn-box btn">
+                    <button type="submit" class="btn">Send Email</button>
+                </div>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright | Mikk Salom</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#"><i class='bx bxs-chevron-up'></i></a>
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
              
     </body>
     </html>
