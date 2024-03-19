@@ -35,9 +35,8 @@ body {
 }
 
 section {
-    padding: 6rem 10rem;
-    min-height: 100vh;
-    border: 1px solid red;  
+    padding: 10rem 9% 2rem;
+    min-height: 100vh;  
 }
   
 .header {
@@ -96,10 +95,24 @@ section {
     -webkit-background-clip: text; */
 }
 
-#menu-icon {
+/* #menu-icon {
     font-size: 3.6rem;
     cursor: pointer;
     color: var(--text-color);
+    display: none;
+} */
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
     display: none;
 }
 
@@ -426,14 +439,15 @@ span {
 }
 
 .about-content {
-    width: 80rem;
+    width: 100%;
     /* background-color: seagreen; */
-    padding: 2rem 2rem;
+    /* padding: 2rem 18rem; */
+    margin: 2rem 18rem;
     /* border-radius: 5px; */
 }
 
 .about-content p {
-    text-align: justify;
+    text-align: left;
     font-size: 1.2rem;
     font-weight: 600;
     line-height: 1.4;
@@ -461,7 +475,7 @@ span {
     display: none;
 }
 
-label {
+.about-content label {
     font-size: 1.4rem;
     font-weight: 600;
     display: inline-block;
@@ -477,7 +491,48 @@ label {
 
 
 /* ----- portfolio section ----- */
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
 
+.portfolio-container .heading {
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.portfolio-container .heading h1 {
+    font-size: 3em;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--main-color);
+}
+
+/* .portfolio-container .heading span {
+    font-weight: 500;
+} */
+
+.portfolio-container .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.portfolio-container .box .column {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.portfolio-container .box .column img {
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
 
 
 /* ----- contact section ----- */
@@ -618,11 +673,12 @@ label {
     align-items: center;
     padding: 0.225rem;
     background: transparent;
-    border: 0.2rem solid var(--second-color);
+    border: 3px solid var(--main-color);
     border-radius: 0.6rem;
     z-index: 1;
     overflow: hidden;
     transition: 0.5s;
+    color: var(--main-color);
 }
 .footer-iconTop a::before {
     content: '';
@@ -675,9 +731,7 @@ label {
 
 
 /* Portfolio */
-
-
-.portfolio {
+/*.portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -744,27 +798,10 @@ label {
     background-clip: 0;
     transition: 0.4s;
     transform: scale(1.1) translateY(7.5px);
-}
+} */
 
-/* ----- category display ----- */
-img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    display: inline-block;
-}
 
-.grid-wrapper > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.grid-wrapper > div > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 
 .portrait img {
@@ -777,4 +814,101 @@ img {
 
 
 
+
+@media only screen and (max-width: 769px){
+    .portfolio-container .box {
+        flex-direction: column;
+    }
+    .portfolio-container .box .column {
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 643px){
+    .portfolio-container .heading {
+        width: 100%;
+    }
+    .portfolio-container .heading h1 {
+        font-size: 1em;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 1rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 200px;
+        height: auto;
+    }
+    .checkbtn {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        background: var(--bg-color);
+        text-align: center;
+        display: flex;
+        line-height: 1.4;
+    }
+
+    .navbar a {
+        font-size: 1.6rem;
+    }
+    
+    #check:checked ~ .navbar {
+        left: 0;
+    }
+
+    .skills-box .skills-content {
+        width: 300px;
+        height: auto;
+    }
+
+    .about-content p {
+        font-size: 1.3rem;
+        width: 275px;   
+    }
+
+    .portfolio-container .heading h1 {
+        font-size: 2rem;
+    }
+
+    .contact-container .contact-input {
+        width: 300px;
+        font-size: 1.4rem;
+    }
+    
+    .footer {
+        font-size: 1.4rem;
+    }
+
+    .home {
+        margin-top: 2rem;
+    }
+}
 
