@@ -654,11 +654,22 @@ span {
 
 /* ----- footer section ----- */
 .footer {
+    position: fixed;
+    bottom: 0;
+    /* right: 0; */
+    left: 0;
+    width: 100%; 
+    padding: 1rem 3%; /* change navbar height */
+
+    z-index: 100;
+
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(50px);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem 9%;
     /* background: var(--second-color); */
 }
 .footer-text p {
